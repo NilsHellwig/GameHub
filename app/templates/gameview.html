@@ -1,0 +1,62 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a class="link back">
+          <i id="game-view-back-button" class="icon icon-back"></i>
+          <span class="if-not-md">Back</span>
+        </a>
+      </div>
+      <div class="title">Game</div>
+    </div>
+  </div>
+  <div class="page-content infinite-scroll-content">
+    <div class="card card-expandable" style="">
+      <div class="card-content" style="">
+        <div id="card-element">
+          <div class="card-header text-color-white" style="text-shadow: 1px 1px 2px #000000;"></div>
+          <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+            <i class="icon f7-icons">xmark_circle_fill</i>
+          </a>
+        </div>
+        <div class="card-content-padding">
+          <div class="row" style="text-align: center;">
+            <div class="col-50" style="margin-top:2em;">
+              <div><i class="f7-icons">desktopcomputer</i></div>
+              <div style="letter-spacing: 0.1em;" id="platform"></div>
+            </div>
+            <div class="col-50" style="margin-top:2em;">
+              <div><i class="f7-icons">star_fill</i></div>
+              <div style="letter-spacing: 0.1em;" id="rating"></div>
+            </div>
+          </div>
+          <div class="row" style="text-align: center;">
+            <div class="col-50" style="margin-top:2em; margin-bottom: 2em;">
+              <div><i class="f7-icons">calendar_circle</i></div>
+              <div style="letter-spacing: 0.05em;" id="releaseYear"></div>
+            </div>
+            <div class="col-50" style="margin-top:2em; margin-bottom: 2em;">
+              <div><i class="f7-icons">layers_alt_fill</i></div>
+              <div style="letter-spacing: 0.05em;" id="genre"></div>
+            </div>
+          </div>
+          <p id="description"></p>
+          <p>
+            <a href="#" class="button button-fill button-round button-large card-close">Close</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="block block-strong inset">
+      <p class="row">
+        <button id="addToCatalogButton" class="col button button-fill color-red sheet-open">Add To Catalog</button>
+        <button id="writeReviewButton" class="col button button-fill color-red">Write Review</button>
+      </p>
+    </div>
+    <div class="list media-list inset">
+      <ul id="reviewListInGameView">
+      </ul>
+    </div>
+  </div>
+</div>

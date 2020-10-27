@@ -1,0 +1,49 @@
+<div class="popup" style="background:black; overflow:scroll;">
+  <div class="page-content">
+    <center style="margin-top: 2em"><p><a id="closeFormButton"><b>CLOSE FORM</b></a></p></center>
+    <center><div class="block-title block-title-medium">Create your personal review!</div></center>
+    <form style="margin-top: 2em" class="list inset" id="my-form">
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label"></div>
+              <div class="item-input-wrap">
+                <input type="text" name="reviewTitle" placeholder="Review Title goes here..." class="resizable">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Rating</div>
+              <div class="item-input-wrap">
+                <select name="rating">
+                  <option value="1">1 (very bad)</option>
+                  <option value="2">2 (bad)</option>
+                  <option value="3">3 (ok)</option>
+                  <option value="4">4 (good)</option>
+                  <option value="5" selected>5 (excellent)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label"></div>
+              <div class="item-input-wrap">
+                <textarea name="reviewText" placeholder="Write a review..." class="resizable"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+    <div class="list inset">
+      <button id="addReviewButton" class="col button button-fill color-red inset">Add Review</button>
+    </div>
+  </div>
+</div>

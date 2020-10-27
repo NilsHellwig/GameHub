@@ -1,0 +1,83 @@
+<div class="page">
+  <!-- Fixed/Dynamic Navbar -->
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a class="link back">
+          <i class="icon icon-back"></i>
+          <span id="game-form-button" class="if-not-md">Back</span>
+        </a>
+      </div>
+      <div class="title">Create Game</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="block-title">Add a new Game</div>
+    <form id="gameForm" class="list no-hairlines-md inset">
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Name of the Game</div>
+              <div class="item-input-wrap">
+                <input type="text" name="gameName" placeholder="Half Life 3" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Platform</div>
+              <div class="item-input-wrap">
+                <input type="text" name="gamePlatform" placeholder="PC, Ps4, Xbox One, ..." />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Genre</div>
+              <div class="item-input-wrap">
+                <input type="text" class="resizable" name="gameGenre" placeholder="i.e. Action-RPG, Sandbox, Shooter, ..." />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Release year</div>
+              <div class="item-input-wrap">
+                <input type="number" class="resizable" name="releaseYear" placeholder="When was the game released?" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="align-top">
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Game description</div>
+              <div class="item-input-wrap">
+                <textarea name="gameDescription" placeholder="Write a description for your game here..." class="resizable"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div style="height:0px;overflow:hidden">
+        <input type="file" id="fileInput" name="fileInput" accept=".jpg" />
+      </div>
+      <div class="block row inset">
+        <div id="insert-image-button" class="col"><a class="button button-small button-fill" href="#">Insert image</a></div>
+        <div id="add-game-button" class="col"><a class="button button-small button-fill" href="#">Add game</a></div>
+      </div>
+      <div class="block-title">Uploaded Image</div>
+      <div class="block block-strong inset">
+        <p id="imageName"></p>
+      </div>
+    </form>
+  </div>
+</div>
